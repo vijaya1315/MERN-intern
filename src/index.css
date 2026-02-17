@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+@layer base{
+     :root {
+        --color-muted: #9E9E9E;
+    }
+   h1{ 
+        @apply text-[64px] text-white font-semibold
+    }
+    /*  .heading{
+        @apply text-white pb-3.5
+    }
+    .themeInput{
+        @apply bg-gray-500 w-[50%] mb-3 p-2.5 rounded-2xl
+    }*/
+    .themeBg{
+        background: linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%);
+    }
+    .themeButton{
+        @apply p-2.5 rounded-[5px] text-[14px] text-white font-normal;
+       background: linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%);
+       &.black{
+        background: black ;
+        color: #fff
+       }
+       &.w198{
+        width:198px
+       }
+    } 
+    body{
+        @apply bg-black text-white;
+        font-family: "Poppins", sans-serif;
+    }
+    .theme-container{
+        @apply w-[1110px] m-auto;
+    }
+    .blur_ball{
+        @apply blur-xs;
+        background: radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%);
+        
+    }
+    .subSection-head{
+        h2{
+            @apply font-semibold text-5xl
+        }
+        p{
+            @apply text-[var(--color-muted)]
+        }
+    }
+}
